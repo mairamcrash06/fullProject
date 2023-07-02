@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Works</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/core.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="inner_header">
+                    <a href="../index.html">
+                        <div class="logotype">
+                            <h2>Java<span>Script</span></h2>
+                        </div>
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="../pages/home_works.html">Home Works</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../pages/lessons.html">Lessons</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="https://t.me/NurDinBuy16" target="_blank">Send hw</a>
+                        </li>
+                    </ul>
+                    <button class="btn" id="btn-get">Click me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="hw1.1">
+            <h2>HW 1</h2>
+            <form method="POST">
+                <input type="text" placeholder="geeksstudio@.com">
+            </form>
+            <button class="accept">Submit</button>
+            <span class="changeble"></span>
+        </div>
+        <div class="hw1.2">
+            <h2>----</h2>
+            <div class="containerBox">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="hw2">
+            <h2>HW 2</h2>
+            <h3 class="zero">0</h3>
+            <button class="stop">stop</button>
+            <button class="start">start</button>
+            <button class="clear">clear</button>
+        </div>
+        <div class="hw3">
+            <h2>HW 3</h2>
+            <div class="tab_slider">
+                <div class="container">
+                    <h3>tab slider</h3>
+                    <div class="inner_tab_slider">
+                        <div class="tab_contents_block">
+                            <div class="tab_content_block">
+                                <h4>Делегирование событий</h4>
+                                <p>В JavaScript делегирование событий - это когда мы используем один обработчик событий для
+                                    группы элементов, вместо того чтобы назначать отдельный обработчик каждому элементу.
+                                    Когда происходит событие на одном из элементов, оно перехватывается общим обработчиком,
+                                    который определяет, какой элемент вызвал событие, и выполняет соответствующие действия.
+                                </p>
+                            </div>
+                            <div class="tab_content_block">
+                                <h4>classList</h4>
+                                <p>classList в JavaScript - это свойство, которое позволяет нам работать с классами элемента
+                                    HTML. С помощью classList мы можем добавлять, удалять или проверять наличие классов у
+                                    элемента. Допустим, у нас есть элемент на веб-странице, и мы хотим изменить его классы с
+                                    помощью JavaScript. Вместо того, чтобы обращаться напрямую к атрибуту class, мы можем
+                                    использовать свойство classList этого элемента. </p>
+                            </div>
+                            <div class="tab_content_block">
+                                <h4>add()</h4>
+                                <p>Метод add позволяет добавить новый класс к списку классов элемента. Например,
+                                    element.classList.add('new-class') добавит класс с именем "new-class" к элементу.</p>
+                            </div>
+                            <div class="tab_content_block">
+                                <h4>remove()</h4>
+                                <p>Метод remove позволяет удалить класс из списка классов элемента. Например,
+                                    element.classList.remove('old-class') удалит класс с именем "old-class" из элемента.</p>
+                            </div>
+                            <div class="tab_content_block">
+                                <h4>contains()</h4>
+                                <p>Метод contains позволяет проверить, содержит ли элемент определенный класс. Он возвращает
+                                    true, если класс присутствует, и false, если его нет. Например,
+                                    element.classList.contains('highlight') вернет true, если у элемента есть класс
+                                    "highlight".</p>
+                            </div>
+                            <div class="tab_content_items">
+                                <div class="tab_content_item tab_content_item_active">Делегирование событий</div>
+                                <div class="tab_content_item">Class List</div>
+                                <div class="tab_content_item">add()</div>
+                                <div class="tab_content_item">remove()</div>
+                                <div class="tab_content_item">contains()</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal_dialog">
+                    <div class="modal_content">
+                        <form action="#">
+                            <div class="modal_close">&times;</div>
+                            <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                            <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                            <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                            <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hw4">
+            <div class="container">
+                <h2>HW 4</h2>
+                <div class="ajax">
+                    <div class="hw4_card">
+                        <h2>Person</h2>
+                        <div>Name:<span class="name1"></span></div>
+                        <div>Age:<span class="age1"></span></div>
+                    </div>
+                    <div class="hw4_card">
+                        <h2>NotPerson</h2>
+                        <div>Name:<span class="name2"></span></div>
+                        <div>Age:<span class="age2"></span></div>
+                    </div>
+                    <div class="hw4_card">
+                        <h2>VeryPerson</h2>
+                        <div>Name:<span class="name3"></span></div>
+                        <div>Age:<span class="age3"></span></div>
+                    </div>
+                </div>
+                <button class="ajax_button">Get Name</button>
+            </div>
+        </div>
+        <div class="hw5"> 
+            <h2>HW 5</h2>
+            <div class="wrapper">
+                <div class="som">
+                    <label for="som">Som</label>
+                    <input type="text" id="som">
+                </div>
+                <div class="usd">
+                    <label for="usd">Usd</label>
+                    <input type="text" id="usd">
+                </div>
+                <div class="euro">
+                    <label for="euro">Euro</label>
+                    <input type="text" id="euro">
+                </div>
+            </div>
+        </div>
+        <div class="hw6">
+            <h2>HW 6</h2>
+            <div class="codWrapper">
+                <div class="fetchButtons">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+                <div class="fetchBox"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
+                    <div class="inner_footer">
+                        <h2>Made by MaiRamBuy</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/box.js"></script>
+<script src="../js/time.js"></script>
+<script src="../js/regular.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/json.js"></script>
+<script src="../js/val.js"></script>
+<script src="../js/fetch.js"></script>
+</html>
