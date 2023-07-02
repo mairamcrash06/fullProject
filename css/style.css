@@ -33,6 +33,7 @@ body {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    width: 150px;
 }
 
 /* HEADER MENU */
@@ -44,6 +45,7 @@ body {
 }
 
 .menu_link a {
+    font-size: 18px;
     color: orange;
     text-transform: uppercase;
 }
@@ -89,7 +91,8 @@ body {
 .footer h2 {
     text-transform: uppercase;
     color: #F79300;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 22px;
 }
 
 
@@ -97,7 +100,7 @@ body {
 .containerBox {
     width: 500px;
     height: 500px;
-    border: 2px solid black;
+    border: 2px solid rgb(233, 151, 29);
     position: relative;
     margin: 0 auto;
 }
@@ -120,47 +123,35 @@ body {
     border: 1px;
 }
 
-/* HW2 */
-.hw2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+/* STOP WATCH */
 
-.zero {
-    color: #2c2d2f;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.stop {
-    height: 30px;
-    width: 70px;
-    background-color: rgb(202, 29, 29);
+.time {
     color: white;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid orange;
+    margin-top: 40px;
 }
 
-.start {
-    height: 30px;
-    width: 80px;
-    background-color: rgb(17, 218, 34);
-    color: white;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px;
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
 }
 
-.clear {
-    height: 30px;
-    width: 60px;
-    background-color: rgb(203, 224, 12);
-    color: white;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px;
+.stopwatch {
+    padding: 100px 0;
+    background: black;
+}
 
+.time_buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* TAB SLIDER */
@@ -220,6 +211,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+}
+.tab_main_title {
+    color: #fff;
+    font-size: 40px;
+}
+.tab_title {
+    color: #fff;
+    font-size: 24px;
 }
 
 /* MODAL */
@@ -296,19 +295,43 @@ body {
 /* currency */
 .wrapperCur {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
-
+.som {
+    width: 200px;
+    height: 60px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
 h2 {
     margin-top: 40px;
 }
 
+#gmail_input {
+    height: 40px;
+    font-size: 15px;
+}
 .usd {
-    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
 .euro {
-    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
 .curinp {
@@ -328,7 +351,7 @@ h2 {
     width: 300px;
     padding: 20px;
     border-radius: 10px;
-    background-color: seagreen;
+    background-color: rgb(250, 37, 37);
     display: flex;
     justify-content: center;
     color: white;
@@ -356,15 +379,16 @@ h2 {
 
 button {
     padding: 10px;
+    width: 100px;
     border-radius: 10px;
-    background-color: #000;
+    background-color: #3498d1;
     color: white;
     transition: .4s;
 }
 
 button:hover {
-    background: none;
-    color: black;
+    background-color:rgb(15, 69, 150) ;
+    color: rgb(189, 181, 181);
     cursor: pointer;
 }
 
@@ -401,4 +425,75 @@ h2 {
 p {
     font-size: 14px;
     margin-bottom: 0;
+}
+
+/* PHONE CHECKER */
+
+#phone_input {
+    height: 40px;
+    font-size: 15px;
+}
+.phone_block {
+    background: black;
+    padding: 100px 0;
+}
+
+.inner_phone_block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid orange;
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form_phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_phone button {
+    width: 100%;
+    margin: 20px 0;
+}
+/* VIDEO BLOCK */
+.block_video {
+    background: black;
+    padding: 100px 0;
+}
+
+.inner_block_video {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* GMAIL BLOCK */
+
+.gmail_block {
+    background: black;
+    padding: 100px 0;
+}
+
+.inner_gmail_block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid orange;
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form_gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_gmail button {
+    width: 100%;
+    margin: 20px 0;
 }
