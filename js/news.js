@@ -1,22 +1,27 @@
-async function getPosts() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
-        return await response.json()
-    }
-    catch (error) { console.error(error) };
-}
-async function render() {
-    const news = await getPosts()
-    const box = document.querySelector('.newsSection')
 
-    news.forEach((item) => {
-        const card = document.createElement('div')
-        card.className = 'card'
-        card.innerHTML = `
-        <h2>${item.title}</h2>
-        <p>${item.body}</p>
-        `
-        box.appendChild(card)
-    })
+async function getNews() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await response.json();
+    return data;
 }
-render().catch(error => console.error(error))
+
+async function renderNews() {
+    const news = await getNews();
+    const newsContainer = document.getElementById('news-container');
+    news.forEach((item) => {
+        const newsCard = document.createElement('div');
+        newsCard.classList.add('news-card');
+        const newsImg = document.createElement('img');
+        newsImg.src = 'https://picsum.photos/400/200?random=' + item.id;
+        const newsTitle = document.createElement('h2');
+        newsTitle.innerText = item.title;
+        const newsBody = document.createElement('p');
+        newsBody.innerText = item.body;
+        newsCard.appendChild(newsImg);
+        newsCard.appendChild(newsTitle);
+        newsCard.appendChild(newsBody);
+        newsContainer.appendChild(newsCard);
+    });
+}
+
+renderNews();

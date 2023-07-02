@@ -10,16 +10,60 @@
 </head>
 
 <body>
-    <header class="newsHeader">
-        <div class="container"></div>
-    </header>
-    <section class="newsSection">
-        <div class="container">
-            
+    <header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <img src="logo.png" alt="News Logo">
         </div>
-    </section>
-    <footer class="newsFooter">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Политика</a></li>
+                <li><a href="#">Экономика</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Наука</a></li>
+            </ul>
+        </nav>
+        <div class="header__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск...">
+                <button type="submit">Найти</button>
+            </form>
+        </div>
+    </div>
+    </header>
 
+    <main>
+        <div id="news-container"></div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>News Today</h2>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 News Today</p>
+        </div>
     </footer>
 </body>
 <script src="../js/news.js"></script>
